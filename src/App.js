@@ -62,16 +62,31 @@ async reinit() {
   render () {
 
     return (
-      <div className='App_container'>
-         <header className='App_header'>
-          <h1>Citateur</h1>
-          <h2>Distributeur de citations</h2>
+      <div className='App_container' id='app_contient'>
+        <div className='modal'id='modal'>
+        <header>
+        <h2>Choix de la citation à rechercher</h2>
         </header>
-        <main>
+        <input className='input_box' type='text' minLength='5' maxLength='12'></input>
+        <footer>
+        <a href="#app_contient">Fermer</a>
+        <a href="">Rechercher</a>
+        </footer>
+        </div>
+         <header className='App_header'>
+         <a className='button_sign'href=""><i className="fab fa-google"> <span>G</span> Continue with google</i></a>
+         <a className='bouton_modal'href='#modal'>Finder</a>
+         </header>
+         <main>
+         <div className='App_titre'>
+           <h1>Citateur</h1>
+           <h2>Distributeur de citations</h2>
+         </div>
           <section>
             <h3>Citation du jour :</h3>
             <Citation citation={this.state.citation} auteur={this.state.auteur}/>
           </section>
+        
         </main>
         <footer>
           Citateur.com

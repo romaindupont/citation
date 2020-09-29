@@ -1,7 +1,6 @@
 .App_container {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,53 +10,109 @@
   background-position: center;
   width: 70vw;
   height: 100vh;
-  position: fixed;
   top:10%;
   left:15vw;
 }
- .c1 {
-  background-color: #0DDE9F;
- }
+.modal {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 70%;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  opacity: 0;
+  pointer-events: none;
 
-.c2 {
-  background-color: #02F5F1;
 }
-
-.c3 {
-  background-color: #02B1EB;
+.modal:target{
+  opacity: 1;
+  pointer-events: auto;
 }
-
-.c4 {
-  background-color: #02F568;
+.modal > div {
+  max-width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding :0.8rem;
+  border-radius: 0.2rem;
+  background: #fff;
 }
-
-.c5 {
-  background-color: #02EB21;
-}
-
-
-.App_header {
-  background-color: rgba(0,0,0,0.4);
-  border-radius: 2em;
+.button_sign {
+  background-color: #376ecb;
   color: white;
-  padding: 0.5em;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  box-shadow: 10px 5px 5px black;
+}
+.button_sign:hover {
+  background: linear-gradient(white, #376ecb);
 }
 
-.App_header h1{
-  font-size: 3em;
-  margin-left: 10%;
+.button_sign span {
+  font-size: 2rem;
+}
+.bouton_modal{
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  box-shadow: 10px 5px 5px black;
+  background-color: #22223b;
+}
+.modal h2{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+input {
+  margin: auto;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+footer a{
+  color: white;
+  background-color: #c9ada7;
+  border-radius: 0.8rem;
+  margin-right: 2rem;
+  padding:  0.8rem;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  
+}
+.App_header{
+  
+}
+.App_titre {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5rem;
+  color: white;
+  padding: 3rem;
+  margin: auto;
+}
+
+.App_titre h1{
+  font-size: 3rem;
+  margin: auto;
   font-weight: bold;
-  letter-spacing: 0.5em;
-  padding-left: 0.2em;
+  letter-spacing: 1.5rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 
-.App_header h2 {
+.App_titre h2 {
   font-size: 1.6em;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: auto;
   color: rgb(77, 77, 77);
-  padding: .2em 0em .2em 1em;
-  border-radius: 1em;
+  text-align: center;
+  letter-spacing: 0.5rem;
 }
 
 
