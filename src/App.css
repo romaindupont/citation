@@ -45,13 +45,14 @@
   text-decoration: none;
   border-radius: 0.8rem;
   box-shadow: 10px 5px 5px black;
+  /* margin-right: 5rem; */
 }
 .button_sign:hover {
   background: linear-gradient(white, #376ecb);
 }
 
 .button_sign span {
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 .bouton_modal{
   color: white;
@@ -84,13 +85,18 @@ footer a{
   text-align: center;
   
 }
-.App_header{
+
+.App_button {
+  margin: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
   
 }
 .App_titre {
-  position: absolute;
+/*   position: absolute;
   top: 150px;
-  right: 100px;
+  right: 100px; */
   background-color: rgba(0,0,0,0.4);
   border-radius: 5rem;
   color: white;
@@ -117,11 +123,11 @@ footer a{
 
 
 h3 {
-  padding: 0.7em;
+  padding: 0.7rem;
 }
 
 .citation {
-  padding: 0.7em;
+  padding: 0.7rem;
   margin: 0 auto;
   text-align: center;
   font-size: 3rem;
@@ -129,9 +135,9 @@ h3 {
 }
 
 .auteur {
-  padding: 0.7em;
+  padding: 0.7rem;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -139,23 +145,23 @@ h3 {
 main {
   width: 100%;
   margin: 1em auto;
-  border-radius: 1em;
-  padding: 1em 0 1em 0;
+  border-radius: 1rem;
+  padding: 1rem 0 1rem;
 }
 
 section {
   font-size: 1rem;
-  margin-top: 1em;
+  margin-top: 1rem;
   margin-left: 10%;
   margin-right: 10%;
-  border-radius: 1em;
+  border-radius: 1rem;
   
 }
 
 footer {
-  border-radius: 2em;
+  border-radius: 2rem;
   color: white;
-  padding: 0.5em;
+  padding: 0.5rem;
   font-weight: bold;
   text-align: center;
 }

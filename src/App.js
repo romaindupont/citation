@@ -74,14 +74,16 @@ async reinit() {
         </footer>
         </div>
          <header className='App_header'>
+         <div className='App_button'>
          <a className='button_sign'href=""><i className="fab fa-google"> <span>G</span> Continue with google</i></a>
          <a className='bouton_modal'href='#modal'>Finder</a>
-         </header>
-         <main>
+         </div>
          <div className='App_titre'>
            <h1>Citateur</h1>
            <h2>Distributeur de citations</h2>
          </div>
+         </header>
+         <main>
           <section>
             <h3>Citation du jour :</h3>
             <Citation citation={this.state.citation} auteur={this.state.auteur}/>
