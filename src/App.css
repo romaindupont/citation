@@ -37,6 +37,31 @@
   border-radius: 0.2rem;
   background: #fff;
 }
+.modal2 {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  opacity: 0;
+  pointer-events: none;
+
+
+}
+.modal2:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal2 > div {
+  max-width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding :0.8rem;
+  border-radius: 0.2rem;
+  background: #fff;
+}
 .button_sign {
   background-color: #376ecb;
   color: white;
@@ -52,9 +77,10 @@
 }
 
 .button_sign span {
-  /* font-size: 2rem; */
 }
-.bouton_modal{
+
+.bouton_modal,
+.maliste {
   color: white;
   font-size: 1.2rem;
   padding: 1rem;
@@ -63,7 +89,9 @@
   box-shadow: 10px 5px 5px black;
   background-color: #22223b;
 }
-.modal h2{
+
+.modal h2,
+.modal2 h2{
   color: white;
   text-align: center;
   font-size: 2rem;
@@ -72,6 +100,11 @@ input {
   margin: auto;
   display: block;
   margin-bottom: 2rem;
+  font-size: 2rem;
+}
+li {
+  color: white;
+  text-align: center;
   font-size: 2rem;
 }
 footer a{
@@ -94,9 +127,6 @@ footer a{
   
 }
 .App_titre {
-/*   position: absolute;
-  top: 150px;
-  right: 100px; */
   background-color: rgba(0,0,0,0.4);
   border-radius: 5rem;
   color: white;
@@ -123,12 +153,24 @@ footer a{
 
 p.citation:hover {
   background: white;
-  opacity: 0.2;
-  /* background-image: url(../img/selecteur.png); */
-}
-p.citation::selection{
+  opacity: 0.3;
+  background-image: url(./img/selecteur.png);
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+  height: 30vh;
+  border-radius: 1.6rem;
+  transition-property: all;
+  transition-duration: 2s;
+
+
 
 }
+
+p.citation::selection {
+
+}
+
 h3 {
   padding: 0.7rem;
 }

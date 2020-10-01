@@ -65,24 +65,35 @@ async reinit() {
       <div className='App_container' id='app_contient'>
         <div className='modal'id='modal'>
         <header>
-        <h2>Choix de la citation à rechercher</h2>
+          <h2>Choix de la citation à rechercher</h2>
         </header>
-        <input className='input_box' type='text' minLength='5' maxLength='12'></input>
-        <footer>
-        <a href="#app_contient">Fermer</a>
-        <a href="">Rechercher</a>
-        </footer>
+          <input className='input_box' type='text' minLength='5' maxLength='12'></input>
+          <footer>
+          <a href="#app_contient">Fermer</a>
+          <a href="?">Rechercher</a>
+          </footer>
         </div>
-         <header className='App_header'>
-         <div className='App_button'>
-         <a className='button_sign'href=""><i className="fab fa-google"> <span>G</span> Continue with google</i></a>
-         <a className='bouton_modal'href='#modal'>Finder</a>
-         </div>
-         <div className='App_titre'>
-           <h1>Citateur</h1>
-           <h2>Distributeur de citations</h2>
-         </div>
-         </header>
+        <div className='modal2' id='malistemodal'>
+        <header>
+          <h2>Mes citations</h2>
+        </header>
+          <ul><li>citation={this.state.citation}</li></ul>
+          <footer>
+          <a href="#app_contient">Fermer</a>
+          <a href="?">voir</a>
+          </footer>
+        </div>       
+        <header className='App_header'>
+        <div className='App_button'>
+          <a className='button_sign' href="?"> <span>G</span> Continue with google</a>
+          <a className='bouton_modal' href='#modal'>Finder</a>
+          <a className='maliste' href='#malistemodal'>Ma liste</a>
+        </div>
+          <div className='App_titre'>
+            <h1>Citateur</h1>
+            <h2>Distributeur de citations</h2>
+          </div>
+        </header>
          <main>
           <section>
             <h3>Citation du jour :</h3>
